@@ -1,8 +1,12 @@
 .profile {
-  max-width: 100px;
+  max-width: 120px;
   height: auto;
 }
 
 td {
   vertical-align: bottom;
+}
+
+tr {
+  border-bottom:1px solid black;
 }
