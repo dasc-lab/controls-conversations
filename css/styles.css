@@ -1,6 +1,8 @@
 .profile {
   max-width: 120px;
   height: auto;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 td {

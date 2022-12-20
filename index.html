@@ -77,6 +77,8 @@
 
         <p>Passcode: <code>dasc-lab</code></p>
 
+        <button id="winter_2023"><i class="fa fa-calendar"></i> Add All Talks</button>
+
         <table>
           <tr>
             <th>Speakers</th>
@@ -90,7 +92,8 @@
             <td></td>
 
             <td>
-              <h5>Jan 17</h5><button id="2023-01-17"></button>
+              <h5>Jan 17</h5>
+              <button id="2023-01-17"><i class="fa fa-calendar"></i></button>
             </td>
 
             <td>(coming soon)</td>
@@ -106,7 +109,7 @@
               "https://kunalgarg.mit.edu/">Kunal Garg</a></h3>
 
               <p>Safe recovery of dynamical systems from actuator
-              faults</p><button id="2023-01-31"></button>
+              faults</p><button id="2023-01-31"><i class="fa fa-calendar"></i></button>
             </td>
 
             <td>(coming soon)</td>
@@ -116,7 +119,7 @@
             <td></td>
 
             <td>
-              <h5>Feb 14</h5><button id="2023-02-14"></button>
+              <h5>Feb 14</h5><button id="2023-02-14"><i class="fa fa-calendar"></i></button>
             </td>
 
             <td>(coming soon)</td>
@@ -126,7 +129,7 @@
             <td></td>
 
             <td>
-              <h5>Feb 28</h5><button id="2023-02-28"></button>
+              <h5>Feb 28</h5><button id="2023-02-28"><i class="fa fa-calendar"></i></button>
             </td>
 
             <td>(coming soon)</td>
@@ -136,7 +139,7 @@
             <td></td>
 
             <td>
-              <h5>Mar 14</h5><button id="2023-03-14"></button>
+              <h5>Mar 14</h5><button id="2023-03-14"><i class="fa fa-calendar"></i></button>
             </td>
 
             <td>(coming soon)</td>
@@ -146,7 +149,7 @@
             <td></td>
 
             <td>
-              <h5>Mar 28</h5><button id="2023-03-28"></button>
+              <h5>Mar 28</h5><button id="2023-03-28"><i class="fa fa-calendar"></i></button>
             </td>
 
             <td>(coming soon)</td>
@@ -156,7 +159,7 @@
             <td></td>
 
             <td>
-              <h5>Apr 11</h5><button id="2023-04-11"></button>
+              <h5>Apr 11</h5><button id="2023-04-11"><i class="fa fa-calendar"></i></button>
             </td>
 
             <td>(coming soon)</td>
@@ -166,7 +169,7 @@
             <td></td>
 
             <td>
-              <h5>Apr 25</h5><button id="2023-04-25"></button>
+              <h5>Apr 25</h5><button id="2023-04-25"><i class="fa fa-calendar"></i></button>
             </td>
 
             <td>(coming soon)</td>
@@ -212,7 +215,7 @@
                 console.log(title);
                 const config = {
                     name: title,
-                    description: "Seminar series hosted by DASC Lab. <br> Meeting Passcode: dasc-lab <br>[url]https://dasc-lab.github.io/controls-conversations/[/url]",
+                  description: "Passcode: dasc-lab<br><br>Seminar series hosted by DASC Lab.<br><br>[url]https://dasc-lab.github.io/controls-conversations/[/url]",
                     startDate: talks[i][0],
                     endDate: talks[i][0],
                     startTime: "12:00",
@@ -232,7 +235,28 @@
                 
             }
 
+/* Add the recurring event */
 
+                const config_winter_2023 = {
+                    name: "DASC Controls Conversations",
+                  description: "Passcode: dasc-lab<br><br>Seminar series hosted by DASC Lab.<br><br>[url]https://dasc-lab.github.io/controls-conversations/[/url]",
+                    startDate: "2023-01-17",
+                    endDate: "2023-01-17",
+                    startTime: "12:00",
+                    endTime: "13:00",
+                    location: "https://umich.zoom.us/j/99623556902",
+                    options: ["Google", "iCal", "Apple", "Outlook.com", "Yahoo"],
+                    timeZone: "America/Detroit",
+                    recurrence:"RRULE:FREQ=WEEKLY;INTERVAL=2;WKST=MO;BYDAY=TU;COUNT=8",
+                    trigger: "click",
+                    iCalFileName: "DASC Controls Conversations",
+                };
+                const button_winter_2023 = document.getElementById("winter_2023");
+
+                if (button_winter_2023){
+                  console.log(button_winter_2023);
+                  button_winter_2023.addEventListener('click', () => atcb_action(config_winter_2023, button_winter_2023));
+                }
 
   </script>
 </body>
