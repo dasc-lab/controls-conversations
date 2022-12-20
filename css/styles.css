@@ -3,3 +3,6 @@
   height: auto;
 }
 
+td {
+  vertical-align: bottom;
+}

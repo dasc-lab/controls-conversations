@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <link rel="stylesheet" href="https://unpkg.com/chota@latest">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1/assets/css/atcb.min.css">
         <title>DASC Controls Conversations</title>
     </head>
     <body>
@@ -47,64 +48,77 @@
                     <p> Meeting Zoom Link:  <a href="https://umich.zoom.us/j/99623556902">https://umich.zoom.us/j/99623556902</a> </p>
                     <p>Passcode: <code>dasc-lab</code><p>
 
+                            <table>
+                                <tr>
+                                    <th>Speakers</th>
+                                    <th></th>
+                                    <th>Video</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><h5>Jan 17</h5>
+                                        <button id="2023-01-17">Add to calendar</button>
+                                    </td>
+                                    <td>(coming soon)</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://kunalgarg.mit.edu/"><img src="assets/figures/kunal-garg.jpeg" class="profile"></img></a>
+                                    </td>
+                                    <td>
+                                        <h3>Jan 31: <a href="https://kunalgarg.mit.edu/">Kunal Garg</a></h3>
+                                        <p>Safe recovery of dynamical systems from actuator faults</p>
+                                        <button id="2023-01-31">Add to calendar</button>
+                                    </td>
+                                    <td>(coming soon)</td>
 
-                    <table>
-                        <tr>
-                            <th>Speakers</th>
-                            <th></th>
-                            <th>Video</th>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><h5>Jan 17</h5></td>
-                            <td>(coming soon)</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="assets/figures/kunal-garg.jpeg" class="profile"></img>
-                            </td>
-                            <td>
-                                <h3>Jan 31: Kunal Garg</h3>
-                                <p><a href="https://kunalgarg.mit.edu/">[About]</a><p>
-                                <p>Safe recovery of dynamical systems from actuator faults</p>
-                            </td>
-                            <td>(coming soon)</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><h5>Feb 14</h5>
+                                        <button id="2023-02-31">Add to calendar</button>
+                                    </td>
+                                    <td>(coming soon)</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><h5>Feb 28</h5>
+                                        <button id="2023-02-28">Add to calendar</button>
+                                    </td>
+                                    <td>(coming soon)</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><h5>Mar 14</h5>
+                                        <button id="2023-03-14">Add to calendar</button>
+                                    </td>
+                                    <td>(coming soon)</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><h5>Mar 28</h5>
+                                        <button id="2023-03-28">Add to calendar</button>
+                                        </td>
+                                    <td>(coming soon)</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><h5>Apr 11</h5>
+                                        <button id="2023-04-11">Add to calendar</button>
+                                    </td>
+                                    <td>(coming soon)</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><h5>Apr 25</h5>
+                                        <button id="2023-04-25">Add to calendar</button>
+                                    </td>
+                                    <td>(coming soon)</td>
+                                </tr>
+                            </table>
+                            <br>
 
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><h5>Feb 14</h5></td>
-                            <td>(coming soon)</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><h5>Feb 28</h5></td>
-                            <td>(coming soon)</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><h5>Mar 14</h5></td>
-                            <td>(coming soon)</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><h5>Mar 28</h5></td>
-                            <td>(coming soon)</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><h5>Apr 11</h5></td>
-                            <td>(coming soon)</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><h5>Apr 25</h5></td>
-                            <td>(coming soon)</td>
-                        </tr>
-                    </table>
-                    <br>
-
-                    <p> We are looking for speakers! If you would like to present, or would like to nominate a speaker, please reach out to me, Devansh Agrawal, at <a href="mailto:devansh@umich.edu">devansh@umich.edu</a>.</p>
+                            <p> We are looking for speakers! If you would like to present, or would like to nominate a speaker, please reach out to me, Devansh Agrawal, at <a href="mailto:devansh@umich.edu">devansh@umich.edu</a>. If the above dates/times don't work for you, we can arrange a different time too. </p>
                 </div>
             </div>
 
@@ -114,6 +128,46 @@
         </div>
 
 
+
+        <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
+
+        <script type="application/javascript">
+
+            dates = [
+                "2023-01-17",
+                "2023-01-31",
+                "2023-02-14",
+                "2023-02-28",
+                "2023-03-14",
+                "2023-03-28",
+                "2023-04-11",
+                "2023-014-25"
+            ]
+
+            for ( d in dates) {
+
+                const config = {
+                    name: "DASC Lab Controls Conversations",
+                    description: "Seminar series hosted by DASC Lab. <br> Meeting Passcode: dasc-lab <br>[url]https://dasc-lab.github.io/controls-conversations/[/url]",
+                    startDate: dates[d],
+                    endDate: dates[d],
+                    startTime: "12:00",
+                    endTime: "13:00",
+                    location: "https://umich.zoom.us/j/99623556902",
+                    options: ["Google", "iCal", "Apple", "Outlook.com", "Yahoo"],
+                    timeZone: "America/Detroit",
+                    trigger: "click",
+                    iCalFileName: "DASC Controls Conversations",
+                };
+                const button = document.getElementById(dates[d]);
+
+                if (button){
+                  console.log(button);
+                  button.addEventListener('click', () => atcb_action(config, button));
+                }
+                
+            }
+        </script>
 
     </body>
 </html>
